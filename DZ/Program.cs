@@ -33,7 +33,7 @@ Console.WriteLine("Сумма цифр в числе =  " + SumCif(kol, num) );*
 
 //ЗАДАЧА 29.
 
-void RandomMassiv(int[] collect)
+int[] RandomMassiv(int[] collect)
 {
 int length = collect.Length;
 int i = 0;
@@ -42,7 +42,7 @@ while (i < length)
      collect[i] = new Random().Next(1, 100);
      i++;
  }
-
+return collect;
 }
 void PrintArray(int[] col)
 
@@ -58,6 +58,6 @@ void PrintArray(int[] col)
 Console.WriteLine("Задайте длину массива!" );
 int dlin = Convert.ToInt32(Console.ReadLine());
 int [] array = new int[dlin];
-RandomMassiv (array);
-PrintArray(array);
+int[]mas=RandomMassiv (array);
+PrintArray(mas);
 
