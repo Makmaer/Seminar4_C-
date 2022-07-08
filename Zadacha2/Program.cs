@@ -9,4 +9,4 @@ return s;
 }
 Console.WriteLine("Input positiv integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input positiv integer number: " + KolCifr(num) );
+Console.WriteLine("Количество цифр в числе = " + KolCifr(num) );
